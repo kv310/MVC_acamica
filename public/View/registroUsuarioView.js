@@ -7,6 +7,11 @@ var usuarioEvent = new UsuarioEvent();
 
 usuarioEvent.agregarSuscripcion(() => alert('usuario registrado!'));
 
+
+//Nueva fumcionalidad...
+
+
+
 document.getElementById('registerButton')
     .addEventListener('click', () => {
 
