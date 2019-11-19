@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MVC</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <form action="#" class='sign-in'>
+        <h2> Formulario </h2>
+        <input type="text" placeholder="Usuario" id='username'>
+        <input type="password" name="" id="pass" placeholder="Ingrese su password">
+        <input type="submit" value="Login!" class='submit'>
+
+    </form>
+
+    <form action="#" class='registrar'>
+        <h2> Formulario </h2>
+        <input type="text" placeholder="Usuario" id='userRegister'>
+        <input type="password" name="" id="passRegister" placeholder="Ingrese su password">
+        <input type="password" name="" id="passValidation" placeholder="Confirme su password">
+        <input type="email" name="" id="email" placeholder="Ingrese su mail">
+        <input type="submit" value="Registrarse" class='submit' id='registerButton' >
+    
+        </form>
+        
+        <script src="../../Model/usuarioEvent.js"></script>
+        <script src="../../Model/Usuario.js"></script>
+        <script src="../../Model/usuarioModel.js"></script>
+        <script src="../../Controller/usuarioController.js"></script>
+        <script src="registroUsuarioView.js"></script>
+
+        <div id='errorMessage' class='error'>
+
+        </div>
+    
+</body>
+</html>
