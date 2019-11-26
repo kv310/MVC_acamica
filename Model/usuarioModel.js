@@ -31,7 +31,7 @@ UsuarioModel.prototype
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
         //Avisamos que el usuario se registro
-        usuarioEvent.publicar();
+        usuarioEvent.publicar('register');
 
     }
     catch(err) {
@@ -40,7 +40,21 @@ UsuarioModel.prototype
 
 }
 
+UsuarioModel.prototype.validarDatosLogin = function(username, password) {
+    // Validar si existe en la base de datos
+    validarEmailYUsernameRegistrado(username);
 
+    // Validar que la contraseña sea correcta
+    // ** COMPLETAR **
+    
+}
+
+UsuarioModel.prototype.login = function() { 
+    
+}
+
+
+// Funciones auxiliares
 function validarEmailYUsernameRegistrado(username, email) {
     // Paso 1: obtenemos los usuarios del sistema 
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];

@@ -16,5 +16,6 @@ UsuarioController.prototype.registrarUsuario = function(username, pass, passVali
 }
 
 UsuarioController.prototype.login = function(username, pass) {
-    
+    this.usuarioModel.validarDatosLogin(username, pass);
+    this.usuarioModel.login(username);
 }
